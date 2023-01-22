@@ -7,7 +7,7 @@ client = boto3.client(
     aws_secret_access_key="",
 )
 
-bucket_name = 'youssefemna'
+bucket_name = 'cbdprojectjoinbucket'
 file_path = 'join.sh'
 
 # Upload the file to the S3 bucket
