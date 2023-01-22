@@ -7,7 +7,7 @@ client = boto3.client(
     aws_secret_access_key="",
 )
 
-bucket_name = 'cbdprojectjoinbucket'
+bucket_name = 'youssefemna'
 file_path = 'join.sh'
 file_name = 'join.sh'
 
