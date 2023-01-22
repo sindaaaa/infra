@@ -40,7 +40,7 @@ sudo sysctl net.bridge.bridge-nf-call-iptables=1
 env | grep ^SUDO_USER
 EOF
 #Changing Docker Cgroup Driver
-sudo mkdir /etc/docker
+#sudo mkdir /etc/docker
 
 docker_daemon=$(cat <<HERE | sudo tee /etc/docker/daemon.json
 { "exec-opts": ["native.cgroupdriver=systemd"],
@@ -50,14 +50,14 @@ docker_daemon=$(cat <<HERE | sudo tee /etc/docker/daemon.json
 "storage-driver": "overlay2"
 }
 HERE
-);
-$docker_daemon
+)
+#$docker_daemon
 sudo systemctl enable docker
 sudo systemctl daemon-reload
 sudo systemctl restart docker
 echo "docker and deamon enabled and restarted" >> /home/ubuntu/checkpoint.txt
 
 #to fix cri error
-rm /etc/containerd/config.toml
+sudo rm /etc/containerd/config.toml
 systemctl restart containerd
 echo "containerd restarted" >> /home/ubuntu/checkpoint.txt
