@@ -3,8 +3,8 @@ import os
 
 client = boto3.client(
     's3',
-    aws_access_key_id="AKIAYSYPVKMUI4HZOEJS",
-    aws_secret_access_key="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",
+    aws_access_key_id="",
+    aws_secret_access_key="",
 )
 
 bucket_name = 'youssefemna'
