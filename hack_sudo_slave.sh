@@ -61,3 +61,9 @@ echo "docker and deamon enabled and restarted" >> /home/ubuntu/checkpoint.txt
 sudo rm /etc/containerd/config.toml
 systemctl restart containerd
 echo "containerd restarted" >> /home/ubuntu/checkpoint.txt
+
+#deploying a pod network
+sudo ufw allow 6443
+sudo ufw allow 6443/tcp
+echo "ports ok" >> /home/ubuntu/checkpoint.txt
+
