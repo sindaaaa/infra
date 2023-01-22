@@ -63,7 +63,7 @@ systemctl restart containerd
 echo "containerd restarted" >> /home/ubuntu/checkpoint.txt
 
 #initializing the kubernets Master Node
-sudo kubeadm init --ignore-preflight-errors=NumCPU,Mem --pod-network-cidr=10.244.0.0/16
+sudo kubeadm init --ignore-preflight-errors=NumCPU,Mem --pod-network-cidr=10.244.0.0/16 >> join-cmd.txt
 echo "kubeadm init ok" >> /home/ubuntu/checkpoint.txt
 
 
