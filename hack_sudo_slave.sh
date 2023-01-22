@@ -31,7 +31,7 @@ echo "kubernetes cni ok" >> /home/ubuntu/checkpoint.txt
 sudo swapoff -a
 
 #setting unique hostnames
-sudo hostnamectl set-hostname kubernetes-worker
+#sudo hostnamectl set-hostname kubernetes-worker
 
 #Letting iptables see Bridged traffic
 lsmod | grep br_netfilter
