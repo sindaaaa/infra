@@ -16,7 +16,7 @@ element_secret=$(awk -F, -v col="2" -v row="2" '{if (NR==row) print $col}' "$fil
 
 
 # Print the element
-export AWS_ACCESS_KEY=$element_key >> ~/.bashrc
-export AWS_SECRET_ACCESS_KEY=$element_secret >> ~/.bashrc
+echo "export AWS_ACCESS_KEY=$element_key" >> ~/.bashrc
+echo "export AWS_SECRET_ACCESS_KEY=$element_secret" >> ~/.bashrc
 
 source ~/.bashrc
