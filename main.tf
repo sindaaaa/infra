@@ -116,7 +116,7 @@ resource "aws_instance" "instance_2" {
       type        = "ssh"
       host        = self.public_ip
       user        = "ubuntu"
-      private_key = file("/home/mdghar/Documents/ENSEEIHT/3A/CBD/Infra_Autom/tf")
+      private_key = file("tf")
       timeout     = "4m"
    }
 }
