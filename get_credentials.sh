@@ -2,7 +2,7 @@
 
 # usage: ./get_csv_element.sh <filename> <column> <row>
 
-#unset env VAR:
+#unset environment variables:
 unset AWS_ACCESS_KEY
 unset AWS_SECRET_ACCESS_KEY
 
