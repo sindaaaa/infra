@@ -1,4 +1,4 @@
-
+#!/bin/bash
 sudo kubectl create namespace monitoring
 git clone https://github.com/techiescamp/kubernetes-prometheus.git
 cd kubernetes-prometheus/
